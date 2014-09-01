@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB59768519B48FE90075EA8C /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59767D19B48FE90075EA8C /* GCD.swift */; };
+		CB59768619B48FE90075EA8C /* Net.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59767E19B48FE90075EA8C /* Net.swift */; };
+		CB59768719B48FE90075EA8C /* NetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59767F19B48FE90075EA8C /* NetData.swift */; };
+		CB59768819B48FE90075EA8C /* NetDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59768019B48FE90075EA8C /* NetDownloadTask.swift */; };
+		CB59768919B48FE90075EA8C /* NetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59768119B48FE90075EA8C /* NetHelper.swift */; };
+		CB59768A19B48FE90075EA8C /* NetRequestSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59768219B48FE90075EA8C /* NetRequestSerialization.swift */; };
+		CB59768B19B48FE90075EA8C /* NetResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59768319B48FE90075EA8C /* NetResponseData.swift */; };
+		CB59768C19B48FE90075EA8C /* NetUploadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59768419B48FE90075EA8C /* NetUploadTask.swift */; };
 		CB5AF04319B0613500CCB912 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5AF04219B0613500CCB912 /* AppDelegate.swift */; };
-		CB5AF04519B0613500CCB912 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5AF04419B0613500CCB912 /* ViewController.swift */; };
+		CB5AF04519B0613500CCB912 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5AF04419B0613500CCB912 /* MainViewController.swift */; };
 		CB5AF04819B0613500CCB912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF04619B0613500CCB912 /* Main.storyboard */; };
 		CB5AF04A19B0613500CCB912 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF04919B0613500CCB912 /* Images.xcassets */; };
 		CB5AF05619B0613500CCB912 /* helpDeskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5AF05519B0613500CCB912 /* helpDeskTests.swift */; };
@@ -44,6 +52,8 @@
 		CB5AF09F19B06AE700CCB912 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5AF09E19B06AE700CCB912 /* QuartzCore.framework */; };
 		CB5AF0A119B06AEE00CCB912 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5AF0A019B06AEE00CCB912 /* CoreLocation.framework */; };
 		CB5AF0A319B06AF800CCB912 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5AF0A219B06AF800CCB912 /* SystemConfiguration.framework */; };
+		CB69DA3E19B4A66E009D57F4 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = CB69DA3D19B4A66E009D57F4 /* image.png */; };
+		CB6DD91519B46DB200FB37DE /* QrScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6DD91419B46DB200FB37DE /* QrScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,10 +67,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB59767D19B48FE90075EA8C /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
+		CB59767E19B48FE90075EA8C /* Net.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Net.swift; sourceTree = "<group>"; };
+		CB59767F19B48FE90075EA8C /* NetData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetData.swift; sourceTree = "<group>"; };
+		CB59768019B48FE90075EA8C /* NetDownloadTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetDownloadTask.swift; sourceTree = "<group>"; };
+		CB59768119B48FE90075EA8C /* NetHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetHelper.swift; sourceTree = "<group>"; };
+		CB59768219B48FE90075EA8C /* NetRequestSerialization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetRequestSerialization.swift; sourceTree = "<group>"; };
+		CB59768319B48FE90075EA8C /* NetResponseData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetResponseData.swift; sourceTree = "<group>"; };
+		CB59768419B48FE90075EA8C /* NetUploadTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetUploadTask.swift; sourceTree = "<group>"; };
 		CB5AF03D19B0613500CCB912 /* helpDesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helpDesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5AF04119B0613500CCB912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB5AF04219B0613500CCB912 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB5AF04419B0613500CCB912 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB5AF04419B0613500CCB912 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CB5AF04719B0613500CCB912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB5AF04919B0613500CCB912 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CB5AF04F19B0613500CCB912 /* helpDeskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helpDeskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +119,9 @@
 		CB5AF09E19B06AE700CCB912 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CB5AF0A019B06AEE00CCB912 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CB5AF0A219B06AF800CCB912 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CB69DA3D19B4A66E009D57F4 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		CB6DD91419B46DB200FB37DE /* QrScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QrScannerViewController.swift; sourceTree = "<group>"; };
+		CB6DD91619B473E900FB37DE /* helpDesk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "helpDesk-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,9 +155,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB59767C19B48FE90075EA8C /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				CB59767D19B48FE90075EA8C /* GCD.swift */,
+				CB59767E19B48FE90075EA8C /* Net.swift */,
+				CB59767F19B48FE90075EA8C /* NetData.swift */,
+				CB59768019B48FE90075EA8C /* NetDownloadTask.swift */,
+				CB59768119B48FE90075EA8C /* NetHelper.swift */,
+				CB59768219B48FE90075EA8C /* NetRequestSerialization.swift */,
+				CB59768319B48FE90075EA8C /* NetResponseData.swift */,
+				CB59768419B48FE90075EA8C /* NetUploadTask.swift */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
 		CB5AF03419B0613500CCB912 = {
 			isa = PBXGroup;
 			children = (
+				CB6DD91619B473E900FB37DE /* helpDesk-Bridging-Header.h */,
 				CB5AF0A419B06ED400CCB912 /* Frameworks */,
 				CB5AF03F19B0613500CCB912 /* helpDesk */,
 				CB5AF05219B0613500CCB912 /* helpDeskTests */,
@@ -156,9 +193,12 @@
 		CB5AF03F19B0613500CCB912 /* helpDesk */ = {
 			isa = PBXGroup;
 			children = (
+				CB69DA3D19B4A66E009D57F4 /* image.png */,
+				CB59767C19B48FE90075EA8C /* Net */,
 				CB5AF04219B0613500CCB912 /* AppDelegate.swift */,
-				CB5AF04419B0613500CCB912 /* ViewController.swift */,
+				CB5AF04419B0613500CCB912 /* MainViewController.swift */,
 				CB5AF04619B0613500CCB912 /* Main.storyboard */,
+				CB6DD91419B46DB200FB37DE /* QrScannerViewController.swift */,
 				CB5AF04919B0613500CCB912 /* Images.xcassets */,
 				CB5AF05F19B0695400CCB912 /* ScanditSDK */,
 				CB5AF04019B0613500CCB912 /* Supporting Files */,
@@ -327,6 +367,7 @@
 				CB5AF08319B0695400CCB912 /* flashlight-turn-off-icon@2x.png in Resources */,
 				CB5AF08919B0695400CCB912 /* LICENSE-2.0.txt in Resources */,
 				CB5AF08B19B0695400CCB912 /* poweredby@2x.png in Resources */,
+				CB69DA3E19B4A66E009D57F4 /* image.png in Resources */,
 				CB5AF08A19B0695400CCB912 /* poweredby.png in Resources */,
 				CB5AF07819B0695400CCB912 /* beep.wav in Resources */,
 				CB5AF08719B0695400CCB912 /* flashlight-turn-on-icon@2x.png in Resources */,
@@ -357,9 +398,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB5AF04519B0613500CCB912 /* ViewController.swift in Sources */,
+				CB59768519B48FE90075EA8C /* GCD.swift in Sources */,
+				CB59768C19B48FE90075EA8C /* NetUploadTask.swift in Sources */,
+				CB59768619B48FE90075EA8C /* Net.swift in Sources */,
+				CB59768A19B48FE90075EA8C /* NetRequestSerialization.swift in Sources */,
+				CB59768919B48FE90075EA8C /* NetHelper.swift in Sources */,
+				CB59768819B48FE90075EA8C /* NetDownloadTask.swift in Sources */,
+				CB6DD91519B46DB200FB37DE /* QrScannerViewController.swift in Sources */,
+				CB5AF04519B0613500CCB912 /* MainViewController.swift in Sources */,
+				CB59768719B48FE90075EA8C /* NetData.swift in Sources */,
 				CB5AF04319B0613500CCB912 /* AppDelegate.swift in Sources */,
 				CB5AF07F19B0695400CCB912 /* empty.cpp in Sources */,
+				CB59768B19B48FE90075EA8C /* NetResponseData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +614,7 @@
 				CB5AF05B19B0613500CCB912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB5AF05C19B0613500CCB912 /* Build configuration list for PBXNativeTarget "helpDeskTests" */ = {
 			isa = XCConfigurationList;
@@ -572,6 +623,7 @@
 				CB5AF05E19B0613500CCB912 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
