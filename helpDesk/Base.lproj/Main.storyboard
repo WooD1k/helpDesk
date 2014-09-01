@@ -32,9 +32,6 @@
                                     <constraint firstAttribute="centerX" secondItem="2BP-ob-E2d" secondAttribute="centerX" id="TdC-Mb-lGZ"/>
                                     <constraint firstAttribute="width" secondItem="5aY-yp-DCw" secondAttribute="height" multiplier="1:1" id="tjD-Yc-YNd"/>
                                 </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="E9e-Q0-QIQ" appends="YES" id="CKf-mh-zps"/>
-                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKj-Mk-jg8" userLabel="QR View">
                                 <rect key="frame" x="10" y="640" width="580" height="80"/>
@@ -127,6 +124,9 @@
                             <constraint firstItem="b6T-TU-wIV" firstAttribute="top" secondItem="IKj-Mk-jg8" secondAttribute="bottom" constant="10" id="ovo-61-m7y"/>
                             <constraint firstItem="5aY-yp-DCw" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="u3J-gp-IdR"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="E9e-Q0-QIQ" appends="YES" id="eAw-sw-8Da"/>
+                        </connections>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1000"/>

@@ -61,8 +61,10 @@ class ViewController: UIViewController {
 	}
 	
 	@IBAction func blurTextField(sender: UITapGestureRecognizer) {
-		scrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
-		activeField?.resignFirstResponder()
+		if var activeField = activeField? {
+			scrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
+			activeField.resignFirstResponder()
+		}
 	}
 }
 
