@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import MobileCoreServices
 
-class ViewController: UIViewController  {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
 	@IBOutlet var scrollView: UIScrollView!
 	var activeField: UITextField?
+	var imagePickerController: UIImagePickerController!
+	let alert = UIAlertView()
 	
 	@IBOutlet weak var userPhoto: UIImageView!
 	
@@ -73,7 +76,7 @@ class ViewController: UIViewController  {
 	
 	@IBAction func doSendData(sender: UIButton) {
 		userPhoto.image = UIImage(named: "image") //FIXME: do not set default image, use photo provided by the user
-		let alert = UIAlertView()
+		
 		alert.title = "something went wrong"
 		alert.addButtonWithTitle("Ok")
 		
@@ -98,14 +101,32 @@ class ViewController: UIViewController  {
 		}
 	}
 	
+	@IBAction func takeAccidentPhoto(sender: UIButton) {
+		if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
+			imagePickerController = UIImagePickerController()
+			imagePickerController.delegate = self
+			imagePickerController.sourceType = UIImagePickerControllerSourceType.Camera
+			imagePickerController.allowsEditing = true
+			
+			self.presentViewController(imagePickerController, animated: true, completion: nil)
+		}
+	}
+	
+	func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+		userPhoto.image = image
+		imagePickerController.dismissViewControllerAnimated(true, completion: nil)
+	}
+	
 	func successfulRequest(ResponseData) {
 		var response = ResponseData.self
-		println("successfulRequest: \(response)")
+		alert.message = "successfulRequest: \(response)"
+		alert.show()
 	}
 	
 	func failureRequest(NSError!) {
 		var error = NSError.self
-		println("failureRequest: \(error)")
+		alert.message = "failureRequest: \(error)"
+		alert.show()
 	}
 }
 

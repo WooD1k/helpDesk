@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="14A329f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -25,12 +25,25 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvc-eQ-iyW">
+                                        <rect key="frame" x="0.0" y="0.0" width="580" height="580"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="takeAccidentPhoto:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SDa-lu-8TA"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="Kvc-eQ-iyW" secondAttribute="centerY" id="2JL-vE-saw"/>
                                     <constraint firstAttribute="centerY" secondItem="2BP-ob-E2d" secondAttribute="centerY" constant="0.75" id="KLO-DY-p4Q"/>
                                     <constraint firstAttribute="centerX" secondItem="2BP-ob-E2d" secondAttribute="centerX" id="TdC-Mb-lGZ"/>
+                                    <constraint firstAttribute="width" secondItem="Kvc-eQ-iyW" secondAttribute="width" id="eMW-Xt-ATS"/>
+                                    <constraint firstAttribute="centerX" secondItem="Kvc-eQ-iyW" secondAttribute="centerX" id="sh4-87-ds4"/>
                                     <constraint firstAttribute="width" secondItem="5aY-yp-DCw" secondAttribute="height" multiplier="1:1" id="tjD-Yc-YNd"/>
+                                    <constraint firstAttribute="height" secondItem="Kvc-eQ-iyW" secondAttribute="height" id="voP-IM-qz1"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKj-Mk-jg8" userLabel="QR View">
