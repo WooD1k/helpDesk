@@ -9,11 +9,13 @@
 import UIKit
 import MobileCoreServices
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, ScanditSDKOverlayControllerDelegate  {
 	@IBOutlet var scrollView: UIScrollView!
 	var activeField: UITextField?
 	var imagePickerController: UIImagePickerController!
 	let alert = UIAlertView()
+	var scanPicker = ScanditSDKBarcodePicker(appKey: "mHbeTgp5EeSKsmLJfKEh7Cg56poI/nKQw2Hb8HRrI/U", cameraFacingPreference: CAMERA_FACING_BACK)
+	var scanditOverlayController = ScanditSDKOverlayController()
 	
 	@IBOutlet weak var userPhoto: UIImageView!
 	
@@ -23,6 +25,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		scanditOverlayController.setBeepEnabled(false)
 		registerForKeyboardNotification()
 		// Do any additional setup after loading the view, typically from a nib.
 	}
@@ -40,33 +43,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 		activeField = nil;
 	}
 	
-	func registerForKeyboardNotification() {
-		var notificationCenter: NSNotificationCenter = NSNotificationCenter.defaultCenter()
-		NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyBoardWasShown:", name: "UIKeyboardDidShowNotification", object: nil)
-		NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillBeHidden:", name: "UIKeyboardWillHideNotification", object: nil)
-	}
-	
-	func keyBoardWasShown(notification: NSNotification) {
-		var info = notification.userInfo!
-		
-		var keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as NSValue).CGRectValue()
-		let keyboardSize = keyboardFrame.size
-		
-		var bkgndRect = scrollView.frame;
-		var contentOffset = -(activeField!.frame.origin.y - keyboardSize.height)
-		
-		bkgndRect.size.height += keyboardSize.height;
-		scrollView.frame = bkgndRect
-		scrollView.setContentOffset(CGPoint(x: 0.0, y: contentOffset), animated: true)
-	}
-	
-	func keyboardWillBeHidden(notification: NSNotification) {
-		var contentInsets = UIEdgeInsetsZero;
-		
-		scrollView.contentInset = contentInsets;
-		scrollView.scrollIndicatorInsets = contentInsets;
-	}
-	
 	@IBAction func blurTextField(sender: UITapGestureRecognizer) {
 		if var activeField = activeField? {
 			scrollView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: true)
@@ -75,7 +51,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 	}
 	
 	@IBAction func doSendData(sender: UIButton) {
-		userPhoto.image = UIImage(named: "image") //FIXME: do not set default image, use photo provided by the user
 		
 		alert.title = "something went wrong"
 		alert.addButtonWithTitle("Ok")
@@ -112,6 +87,42 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 		}
 	}
 	
+	@IBAction func showScanViewModally(sender: UIButton) {
+		self.scanPicker.force2dRecognition(false)
+		self.scanPicker.overlayController.showToolBar(true)
+		self.scanPicker.overlayController.delegate = self
+		
+		presentViewController(scanPicker, animated: true, completion: {})
+		scanPicker.startScanning()
+	}
+	
+	func registerForKeyboardNotification() {
+		var notificationCenter: NSNotificationCenter = NSNotificationCenter.defaultCenter()
+		NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyBoardWasShown:", name: "UIKeyboardDidShowNotification", object: nil)
+		NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillBeHidden:", name: "UIKeyboardWillHideNotification", object: nil)
+	}
+	
+	func keyBoardWasShown(notification: NSNotification) {
+		var info = notification.userInfo!
+		
+		var keyboardFrame: CGRect = (info[UIKeyboardFrameEndUserInfoKey] as NSValue).CGRectValue()
+		let keyboardSize = keyboardFrame.size
+		
+		var bkgndRect = scrollView.frame;
+		var contentOffset = -(activeField!.frame.origin.y - keyboardSize.height)
+		
+		bkgndRect.size.height += keyboardSize.height;
+		scrollView.frame = bkgndRect
+		scrollView.setContentOffset(CGPoint(x: 0.0, y: contentOffset), animated: true)
+	}
+	
+	func keyboardWillBeHidden(notification: NSNotification) {
+		var contentInsets = UIEdgeInsetsZero;
+		
+		scrollView.contentInset = contentInsets;
+		scrollView.scrollIndicatorInsets = contentInsets;
+	}
+	
 	func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
 		userPhoto.image = image
 		imagePickerController.dismissViewControllerAnimated(true, completion: nil)
@@ -127,6 +138,26 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 		var error = NSError.self
 		alert.message = "failureRequest: \(error)"
 		alert.show()
+	}
+	
+	func scanditSDKOverlayController(overlayController: ScanditSDKOverlayController!, didCancelWithStatus status: [NSObject : AnyObject]!) {
+		dismissViewControllerAnimated(true, completion: {
+			self.scanPicker.stopScanning()
+		})
+	}
+	
+	func scanditSDKOverlayController(overlayController: ScanditSDKOverlayController!, didManualSearch text: String!) {
+		
+	}
+	
+	func scanditSDKOverlayController(overlayController: ScanditSDKOverlayController!, didScanBarcode barcode: [NSObject : AnyObject]!) {
+		if let scanResult = barcode as? Dictionary<String, AnyObject> {
+			println("scanResult: \(scanResult)")
+			dismissViewControllerAnimated(true, completion: {
+				self.scanPicker.stopScanning()
+				self.locationTextField.text = barcode.description
+			})
+		}
 	}
 }
 

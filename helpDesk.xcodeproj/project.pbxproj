@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB0A6A1419D170FA007F6495 /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = CB0A69FC19D170FA007F6495 /* beep.wav */; };
+		CB0A6A1519D170FA007F6495 /* camera-swap-icon-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0A69FD19D170FA007F6495 /* camera-swap-icon-pressed.png */; };
+		CB0A6A1619D170FA007F6495 /* camera-swap-icon-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0A69FE19D170FA007F6495 /* camera-swap-icon-pressed@2x.png */; };
+		CB0A6A1719D170FA007F6495 /* camera-swap-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0A69FF19D170FA007F6495 /* camera-swap-icon.png */; };
+		CB0A6A1819D170FA007F6495 /* camera-swap-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0A6A0019D170FA007F6495 /* camera-swap-icon@2x.png */; };
+		CB0A6A1919D170FA007F6495 /* CHANGELOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB0A6A0119D170FA007F6495 /* CHANGELOG.txt */; };
+		CB0A6A1A19D170FA007F6495 /* scanditsdk.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB0A6A0219D170FA007F6495 /* scanditsdk.strings */; };
+		CB0A6A1B19D170FA007F6495 /* empty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB0A6A0419D170FA007F6495 /* empty.cpp */; };
+		CB0A6A1C19D170FA007F6495 /* flashlight-turn-off-icon-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0A6A0619D170FA007F6495 /* flashlight-turn-off-icon-pressed.png */; };
+		CB0A6A1D19D170FA007F6495 /* flashlight-turn-off-icon-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0A6A0719D170FA007F6495 /* flashlight-turn-off-icon-pressed@2x.png */; };
+		CB0A6A1E19D170FA007F6495 /* flashlight-turn-off-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0A6A0819D170FA007F6495 /* flashlight-turn-off-icon.png */; };
+		CB0A6A1F19D170FA007F6495 /* flashlight-turn-off-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0A6A0919D170FA007F6495 /* flashlight-turn-off-icon@2x.png */; };
+		CB0A6A2019D170FA007F6495 /* flashlight-turn-on-icon-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0A6A0A19D170FA007F6495 /* flashlight-turn-on-icon-pressed.png */; };
+		CB0A6A2119D170FA007F6495 /* flashlight-turn-on-icon-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0A6A0B19D170FA007F6495 /* flashlight-turn-on-icon-pressed@2x.png */; };
+		CB0A6A2219D170FA007F6495 /* flashlight-turn-on-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0A6A0C19D170FA007F6495 /* flashlight-turn-on-icon.png */; };
+		CB0A6A2319D170FA007F6495 /* flashlight-turn-on-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0A6A0D19D170FA007F6495 /* flashlight-turn-on-icon@2x.png */; };
+		CB0A6A2519D170FA007F6495 /* LICENSE-2.0.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB0A6A0F19D170FA007F6495 /* LICENSE-2.0.txt */; };
+		CB0A6A2619D170FA007F6495 /* poweredby.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0A6A1019D170FA007F6495 /* poweredby.png */; };
+		CB0A6A2719D170FA007F6495 /* poweredby@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB0A6A1119D170FA007F6495 /* poweredby@2x.png */; };
+		CB0C893819D180FF00D6BDEC /* libscanditsdk-iphone-4.2.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0C893719D180FF00D6BDEC /* libscanditsdk-iphone-4.2.0.a */; };
+		CB0C893C19D1822800D6BDEC /* libiconv.2.4.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB0C893919D1822800D6BDEC /* libiconv.2.4.0.dylib */; };
 		CB59768519B48FE90075EA8C /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59767D19B48FE90075EA8C /* GCD.swift */; };
 		CB59768619B48FE90075EA8C /* Net.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59767E19B48FE90075EA8C /* Net.swift */; };
 		CB59768719B48FE90075EA8C /* NetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB59767F19B48FE90075EA8C /* NetData.swift */; };
@@ -20,26 +41,6 @@
 		CB5AF04819B0613500CCB912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF04619B0613500CCB912 /* Main.storyboard */; };
 		CB5AF04A19B0613500CCB912 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF04919B0613500CCB912 /* Images.xcassets */; };
 		CB5AF05619B0613500CCB912 /* helpDeskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5AF05519B0613500CCB912 /* helpDeskTests.swift */; };
-		CB5AF07819B0695400CCB912 /* beep.wav in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF06019B0695400CCB912 /* beep.wav */; };
-		CB5AF07919B0695400CCB912 /* camera-swap-icon-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF06119B0695400CCB912 /* camera-swap-icon-pressed.png */; };
-		CB5AF07A19B0695400CCB912 /* camera-swap-icon-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF06219B0695400CCB912 /* camera-swap-icon-pressed@2x.png */; };
-		CB5AF07B19B0695400CCB912 /* camera-swap-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF06319B0695400CCB912 /* camera-swap-icon.png */; };
-		CB5AF07C19B0695400CCB912 /* camera-swap-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF06419B0695400CCB912 /* camera-swap-icon@2x.png */; };
-		CB5AF07D19B0695400CCB912 /* CHANGELOG.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF06519B0695400CCB912 /* CHANGELOG.txt */; };
-		CB5AF07E19B0695400CCB912 /* scanditsdk.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF06619B0695400CCB912 /* scanditsdk.strings */; };
-		CB5AF07F19B0695400CCB912 /* empty.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB5AF06819B0695400CCB912 /* empty.cpp */; };
-		CB5AF08019B0695400CCB912 /* flashlight-turn-off-icon-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF06A19B0695400CCB912 /* flashlight-turn-off-icon-pressed.png */; };
-		CB5AF08119B0695400CCB912 /* flashlight-turn-off-icon-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF06B19B0695400CCB912 /* flashlight-turn-off-icon-pressed@2x.png */; };
-		CB5AF08219B0695400CCB912 /* flashlight-turn-off-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF06C19B0695400CCB912 /* flashlight-turn-off-icon.png */; };
-		CB5AF08319B0695400CCB912 /* flashlight-turn-off-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF06D19B0695400CCB912 /* flashlight-turn-off-icon@2x.png */; };
-		CB5AF08419B0695400CCB912 /* flashlight-turn-on-icon-pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF06E19B0695400CCB912 /* flashlight-turn-on-icon-pressed.png */; };
-		CB5AF08519B0695400CCB912 /* flashlight-turn-on-icon-pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF06F19B0695400CCB912 /* flashlight-turn-on-icon-pressed@2x.png */; };
-		CB5AF08619B0695400CCB912 /* flashlight-turn-on-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF07019B0695400CCB912 /* flashlight-turn-on-icon.png */; };
-		CB5AF08719B0695400CCB912 /* flashlight-turn-on-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF07119B0695400CCB912 /* flashlight-turn-on-icon@2x.png */; };
-		CB5AF08819B0695400CCB912 /* libscanditsdk-iphone-4.2.0BETA2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5AF07219B0695400CCB912 /* libscanditsdk-iphone-4.2.0BETA2.a */; };
-		CB5AF08919B0695400CCB912 /* LICENSE-2.0.txt in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF07319B0695400CCB912 /* LICENSE-2.0.txt */; };
-		CB5AF08A19B0695400CCB912 /* poweredby.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF07419B0695400CCB912 /* poweredby.png */; };
-		CB5AF08B19B0695400CCB912 /* poweredby@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB5AF07519B0695400CCB912 /* poweredby@2x.png */; };
 		CB5AF08D19B06A2400CCB912 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5AF08C19B06A2400CCB912 /* CoreVideo.framework */; };
 		CB5AF08F19B06A3900CCB912 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5AF08E19B06A3900CCB912 /* libc++.dylib */; };
 		CB5AF09119B06A9A00CCB912 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5AF09019B06A9A00CCB912 /* UIKit.framework */; };
@@ -52,8 +53,6 @@
 		CB5AF09F19B06AE700CCB912 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5AF09E19B06AE700CCB912 /* QuartzCore.framework */; };
 		CB5AF0A119B06AEE00CCB912 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5AF0A019B06AEE00CCB912 /* CoreLocation.framework */; };
 		CB5AF0A319B06AF800CCB912 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB5AF0A219B06AF800CCB912 /* SystemConfiguration.framework */; };
-		CB69DA3E19B4A66E009D57F4 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = CB69DA3D19B4A66E009D57F4 /* image.png */; };
-		CB6DD91519B46DB200FB37DE /* QrScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6DD91419B46DB200FB37DE /* QrScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +66,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB0A69FC19D170FA007F6495 /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
+		CB0A69FD19D170FA007F6495 /* camera-swap-icon-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-swap-icon-pressed.png"; sourceTree = "<group>"; };
+		CB0A69FE19D170FA007F6495 /* camera-swap-icon-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-swap-icon-pressed@2x.png"; sourceTree = "<group>"; };
+		CB0A69FF19D170FA007F6495 /* camera-swap-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-swap-icon.png"; sourceTree = "<group>"; };
+		CB0A6A0019D170FA007F6495 /* camera-swap-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-swap-icon@2x.png"; sourceTree = "<group>"; };
+		CB0A6A0119D170FA007F6495 /* CHANGELOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.txt; sourceTree = "<group>"; };
+		CB0A6A0319D170FA007F6495 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/scanditsdk.strings; sourceTree = "<group>"; };
+		CB0A6A0419D170FA007F6495 /* empty.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = empty.cpp; sourceTree = "<group>"; };
+		CB0A6A0519D170FA007F6495 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/scanditsdk.strings; sourceTree = "<group>"; };
+		CB0A6A0619D170FA007F6495 /* flashlight-turn-off-icon-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-off-icon-pressed.png"; sourceTree = "<group>"; };
+		CB0A6A0719D170FA007F6495 /* flashlight-turn-off-icon-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-off-icon-pressed@2x.png"; sourceTree = "<group>"; };
+		CB0A6A0819D170FA007F6495 /* flashlight-turn-off-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-off-icon.png"; sourceTree = "<group>"; };
+		CB0A6A0919D170FA007F6495 /* flashlight-turn-off-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-off-icon@2x.png"; sourceTree = "<group>"; };
+		CB0A6A0A19D170FA007F6495 /* flashlight-turn-on-icon-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-on-icon-pressed.png"; sourceTree = "<group>"; };
+		CB0A6A0B19D170FA007F6495 /* flashlight-turn-on-icon-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-on-icon-pressed@2x.png"; sourceTree = "<group>"; };
+		CB0A6A0C19D170FA007F6495 /* flashlight-turn-on-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-on-icon.png"; sourceTree = "<group>"; };
+		CB0A6A0D19D170FA007F6495 /* flashlight-turn-on-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-on-icon@2x.png"; sourceTree = "<group>"; };
+		CB0A6A0F19D170FA007F6495 /* LICENSE-2.0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LICENSE-2.0.txt"; sourceTree = "<group>"; };
+		CB0A6A1019D170FA007F6495 /* poweredby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poweredby.png; sourceTree = "<group>"; };
+		CB0A6A1119D170FA007F6495 /* poweredby@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poweredby@2x.png"; sourceTree = "<group>"; };
+		CB0A6A1219D170FA007F6495 /* ScanditSDKBarcodePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanditSDKBarcodePicker.h; sourceTree = "<group>"; };
+		CB0A6A1319D170FA007F6495 /* ScanditSDKOverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanditSDKOverlayController.h; sourceTree = "<group>"; };
+		CB0A6A2819D17252007F6495 /* helpDesk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "helpDesk-Bridging-Header.h"; sourceTree = "<group>"; };
+		CB0C893719D180FF00D6BDEC /* libscanditsdk-iphone-4.2.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libscanditsdk-iphone-4.2.0.a"; sourceTree = "<group>"; };
+		CB0C893919D1822800D6BDEC /* libiconv.2.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.4.0.dylib; path = usr/lib/libiconv.2.4.0.dylib; sourceTree = SDKROOT; };
+		CB0C893A19D1822800D6BDEC /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = usr/lib/libiconv.2.dylib; sourceTree = SDKROOT; };
+		CB0C893B19D1822800D6BDEC /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		CB59767D19B48FE90075EA8C /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
 		CB59767E19B48FE90075EA8C /* Net.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Net.swift; sourceTree = "<group>"; };
 		CB59767F19B48FE90075EA8C /* NetData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetData.swift; sourceTree = "<group>"; };
@@ -84,29 +110,6 @@
 		CB5AF04F19B0613500CCB912 /* helpDeskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = helpDeskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5AF05419B0613500CCB912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB5AF05519B0613500CCB912 /* helpDeskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpDeskTests.swift; sourceTree = "<group>"; };
-		CB5AF06019B0695400CCB912 /* beep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beep.wav; sourceTree = "<group>"; };
-		CB5AF06119B0695400CCB912 /* camera-swap-icon-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-swap-icon-pressed.png"; sourceTree = "<group>"; };
-		CB5AF06219B0695400CCB912 /* camera-swap-icon-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-swap-icon-pressed@2x.png"; sourceTree = "<group>"; };
-		CB5AF06319B0695400CCB912 /* camera-swap-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-swap-icon.png"; sourceTree = "<group>"; };
-		CB5AF06419B0695400CCB912 /* camera-swap-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-swap-icon@2x.png"; sourceTree = "<group>"; };
-		CB5AF06519B0695400CCB912 /* CHANGELOG.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.txt; sourceTree = "<group>"; };
-		CB5AF06719B0695400CCB912 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/scanditsdk.strings; sourceTree = "<group>"; };
-		CB5AF06819B0695400CCB912 /* empty.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = empty.cpp; sourceTree = "<group>"; };
-		CB5AF06919B0695400CCB912 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/scanditsdk.strings; sourceTree = "<group>"; };
-		CB5AF06A19B0695400CCB912 /* flashlight-turn-off-icon-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-off-icon-pressed.png"; sourceTree = "<group>"; };
-		CB5AF06B19B0695400CCB912 /* flashlight-turn-off-icon-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-off-icon-pressed@2x.png"; sourceTree = "<group>"; };
-		CB5AF06C19B0695400CCB912 /* flashlight-turn-off-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-off-icon.png"; sourceTree = "<group>"; };
-		CB5AF06D19B0695400CCB912 /* flashlight-turn-off-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-off-icon@2x.png"; sourceTree = "<group>"; };
-		CB5AF06E19B0695400CCB912 /* flashlight-turn-on-icon-pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-on-icon-pressed.png"; sourceTree = "<group>"; };
-		CB5AF06F19B0695400CCB912 /* flashlight-turn-on-icon-pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-on-icon-pressed@2x.png"; sourceTree = "<group>"; };
-		CB5AF07019B0695400CCB912 /* flashlight-turn-on-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-on-icon.png"; sourceTree = "<group>"; };
-		CB5AF07119B0695400CCB912 /* flashlight-turn-on-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flashlight-turn-on-icon@2x.png"; sourceTree = "<group>"; };
-		CB5AF07219B0695400CCB912 /* libscanditsdk-iphone-4.2.0BETA2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libscanditsdk-iphone-4.2.0BETA2.a"; sourceTree = "<group>"; };
-		CB5AF07319B0695400CCB912 /* LICENSE-2.0.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LICENSE-2.0.txt"; sourceTree = "<group>"; };
-		CB5AF07419B0695400CCB912 /* poweredby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poweredby.png; sourceTree = "<group>"; };
-		CB5AF07519B0695400CCB912 /* poweredby@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poweredby@2x.png"; sourceTree = "<group>"; };
-		CB5AF07619B0695400CCB912 /* ScanditSDKBarcodePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanditSDKBarcodePicker.h; sourceTree = "<group>"; };
-		CB5AF07719B0695400CCB912 /* ScanditSDKOverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanditSDKOverlayController.h; sourceTree = "<group>"; };
 		CB5AF08C19B06A2400CCB912 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		CB5AF08E19B06A3900CCB912 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		CB5AF09019B06A9A00CCB912 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -119,9 +122,6 @@
 		CB5AF09E19B06AE700CCB912 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CB5AF0A019B06AEE00CCB912 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CB5AF0A219B06AF800CCB912 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		CB69DA3D19B4A66E009D57F4 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
-		CB6DD91419B46DB200FB37DE /* QrScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QrScannerViewController.swift; sourceTree = "<group>"; };
-		CB6DD91619B473E900FB37DE /* helpDesk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "helpDesk-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +129,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB0C893C19D1822800D6BDEC /* libiconv.2.4.0.dylib in Frameworks */,
 				CB5AF0A319B06AF800CCB912 /* SystemConfiguration.framework in Frameworks */,
 				CB5AF0A119B06AEE00CCB912 /* CoreLocation.framework in Frameworks */,
+				CB0C893819D180FF00D6BDEC /* libscanditsdk-iphone-4.2.0.a in Frameworks */,
 				CB5AF09F19B06AE700CCB912 /* QuartzCore.framework in Frameworks */,
 				CB5AF09D19B06ADE00CCB912 /* CoreMedia.framework in Frameworks */,
 				CB5AF09B19B06AD100CCB912 /* AVFoundation.framework in Frameworks */,
@@ -141,7 +143,6 @@
 				CB5AF09119B06A9A00CCB912 /* UIKit.framework in Frameworks */,
 				CB5AF08F19B06A3900CCB912 /* libc++.dylib in Frameworks */,
 				CB5AF08D19B06A2400CCB912 /* CoreVideo.framework in Frameworks */,
-				CB5AF08819B0695400CCB912 /* libscanditsdk-iphone-4.2.0BETA2.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +156,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB0A69FB19D170FA007F6495 /* ScanditSDK */ = {
+			isa = PBXGroup;
+			children = (
+				CB0C893719D180FF00D6BDEC /* libscanditsdk-iphone-4.2.0.a */,
+				CB0A69FC19D170FA007F6495 /* beep.wav */,
+				CB0A69FD19D170FA007F6495 /* camera-swap-icon-pressed.png */,
+				CB0A69FE19D170FA007F6495 /* camera-swap-icon-pressed@2x.png */,
+				CB0A69FF19D170FA007F6495 /* camera-swap-icon.png */,
+				CB0A6A0019D170FA007F6495 /* camera-swap-icon@2x.png */,
+				CB0A6A0119D170FA007F6495 /* CHANGELOG.txt */,
+				CB0A6A0219D170FA007F6495 /* scanditsdk.strings */,
+				CB0A6A0419D170FA007F6495 /* empty.cpp */,
+				CB0A6A0619D170FA007F6495 /* flashlight-turn-off-icon-pressed.png */,
+				CB0A6A0719D170FA007F6495 /* flashlight-turn-off-icon-pressed@2x.png */,
+				CB0A6A0819D170FA007F6495 /* flashlight-turn-off-icon.png */,
+				CB0A6A0919D170FA007F6495 /* flashlight-turn-off-icon@2x.png */,
+				CB0A6A0A19D170FA007F6495 /* flashlight-turn-on-icon-pressed.png */,
+				CB0A6A0B19D170FA007F6495 /* flashlight-turn-on-icon-pressed@2x.png */,
+				CB0A6A0C19D170FA007F6495 /* flashlight-turn-on-icon.png */,
+				CB0A6A0D19D170FA007F6495 /* flashlight-turn-on-icon@2x.png */,
+				CB0A6A0F19D170FA007F6495 /* LICENSE-2.0.txt */,
+				CB0A6A1019D170FA007F6495 /* poweredby.png */,
+				CB0A6A1119D170FA007F6495 /* poweredby@2x.png */,
+				CB0A6A1219D170FA007F6495 /* ScanditSDKBarcodePicker.h */,
+				CB0A6A1319D170FA007F6495 /* ScanditSDKOverlayController.h */,
+			);
+			path = ScanditSDK;
+			sourceTree = "<group>";
+		};
 		CB59767C19B48FE90075EA8C /* Net */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,7 +203,6 @@
 		CB5AF03419B0613500CCB912 = {
 			isa = PBXGroup;
 			children = (
-				CB6DD91619B473E900FB37DE /* helpDesk-Bridging-Header.h */,
 				CB5AF0A419B06ED400CCB912 /* Frameworks */,
 				CB5AF03F19B0613500CCB912 /* helpDesk */,
 				CB5AF05219B0613500CCB912 /* helpDeskTests */,
@@ -193,14 +222,13 @@
 		CB5AF03F19B0613500CCB912 /* helpDesk */ = {
 			isa = PBXGroup;
 			children = (
-				CB69DA3D19B4A66E009D57F4 /* image.png */,
+				CB0A6A2819D17252007F6495 /* helpDesk-Bridging-Header.h */,
+				CB0A69FB19D170FA007F6495 /* ScanditSDK */,
 				CB59767C19B48FE90075EA8C /* Net */,
 				CB5AF04219B0613500CCB912 /* AppDelegate.swift */,
 				CB5AF04419B0613500CCB912 /* MainViewController.swift */,
 				CB5AF04619B0613500CCB912 /* Main.storyboard */,
-				CB6DD91419B46DB200FB37DE /* QrScannerViewController.swift */,
 				CB5AF04919B0613500CCB912 /* Images.xcassets */,
-				CB5AF05F19B0695400CCB912 /* ScanditSDK */,
 				CB5AF04019B0613500CCB912 /* Supporting Files */,
 			);
 			path = helpDesk;
@@ -231,38 +259,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CB5AF05F19B0695400CCB912 /* ScanditSDK */ = {
-			isa = PBXGroup;
-			children = (
-				CB5AF06019B0695400CCB912 /* beep.wav */,
-				CB5AF06119B0695400CCB912 /* camera-swap-icon-pressed.png */,
-				CB5AF06219B0695400CCB912 /* camera-swap-icon-pressed@2x.png */,
-				CB5AF06319B0695400CCB912 /* camera-swap-icon.png */,
-				CB5AF06419B0695400CCB912 /* camera-swap-icon@2x.png */,
-				CB5AF06519B0695400CCB912 /* CHANGELOG.txt */,
-				CB5AF06619B0695400CCB912 /* scanditsdk.strings */,
-				CB5AF06819B0695400CCB912 /* empty.cpp */,
-				CB5AF06A19B0695400CCB912 /* flashlight-turn-off-icon-pressed.png */,
-				CB5AF06B19B0695400CCB912 /* flashlight-turn-off-icon-pressed@2x.png */,
-				CB5AF06C19B0695400CCB912 /* flashlight-turn-off-icon.png */,
-				CB5AF06D19B0695400CCB912 /* flashlight-turn-off-icon@2x.png */,
-				CB5AF06E19B0695400CCB912 /* flashlight-turn-on-icon-pressed.png */,
-				CB5AF06F19B0695400CCB912 /* flashlight-turn-on-icon-pressed@2x.png */,
-				CB5AF07019B0695400CCB912 /* flashlight-turn-on-icon.png */,
-				CB5AF07119B0695400CCB912 /* flashlight-turn-on-icon@2x.png */,
-				CB5AF07219B0695400CCB912 /* libscanditsdk-iphone-4.2.0BETA2.a */,
-				CB5AF07319B0695400CCB912 /* LICENSE-2.0.txt */,
-				CB5AF07419B0695400CCB912 /* poweredby.png */,
-				CB5AF07519B0695400CCB912 /* poweredby@2x.png */,
-				CB5AF07619B0695400CCB912 /* ScanditSDKBarcodePicker.h */,
-				CB5AF07719B0695400CCB912 /* ScanditSDKOverlayController.h */,
-			);
-			path = ScanditSDK;
-			sourceTree = "<group>";
-		};
 		CB5AF0A419B06ED400CCB912 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB0C893919D1822800D6BDEC /* libiconv.2.4.0.dylib */,
+				CB0C893A19D1822800D6BDEC /* libiconv.2.dylib */,
+				CB0C893B19D1822800D6BDEC /* libiconv.dylib */,
 				CB5AF0A219B06AF800CCB912 /* SystemConfiguration.framework */,
 				CB5AF0A019B06AEE00CCB912 /* CoreLocation.framework */,
 				CB5AF09E19B06AE700CCB912 /* QuartzCore.framework */,
@@ -360,27 +362,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB5AF07B19B0695400CCB912 /* camera-swap-icon.png in Resources */,
-				CB5AF08219B0695400CCB912 /* flashlight-turn-off-icon.png in Resources */,
-				CB5AF07C19B0695400CCB912 /* camera-swap-icon@2x.png in Resources */,
-				CB5AF08419B0695400CCB912 /* flashlight-turn-on-icon-pressed.png in Resources */,
-				CB5AF08319B0695400CCB912 /* flashlight-turn-off-icon@2x.png in Resources */,
-				CB5AF08919B0695400CCB912 /* LICENSE-2.0.txt in Resources */,
-				CB5AF08B19B0695400CCB912 /* poweredby@2x.png in Resources */,
-				CB69DA3E19B4A66E009D57F4 /* image.png in Resources */,
-				CB5AF08A19B0695400CCB912 /* poweredby.png in Resources */,
-				CB5AF07819B0695400CCB912 /* beep.wav in Resources */,
-				CB5AF08719B0695400CCB912 /* flashlight-turn-on-icon@2x.png in Resources */,
-				CB5AF07D19B0695400CCB912 /* CHANGELOG.txt in Resources */,
-				CB5AF07919B0695400CCB912 /* camera-swap-icon-pressed.png in Resources */,
+				CB0A6A2019D170FA007F6495 /* flashlight-turn-on-icon-pressed.png in Resources */,
+				CB0A6A2519D170FA007F6495 /* LICENSE-2.0.txt in Resources */,
+				CB0A6A2219D170FA007F6495 /* flashlight-turn-on-icon.png in Resources */,
+				CB0A6A1A19D170FA007F6495 /* scanditsdk.strings in Resources */,
+				CB0A6A2119D170FA007F6495 /* flashlight-turn-on-icon-pressed@2x.png in Resources */,
+				CB0A6A2619D170FA007F6495 /* poweredby.png in Resources */,
+				CB0A6A1619D170FA007F6495 /* camera-swap-icon-pressed@2x.png in Resources */,
+				CB0A6A1419D170FA007F6495 /* beep.wav in Resources */,
+				CB0A6A1819D170FA007F6495 /* camera-swap-icon@2x.png in Resources */,
+				CB0A6A1D19D170FA007F6495 /* flashlight-turn-off-icon-pressed@2x.png in Resources */,
+				CB0A6A1919D170FA007F6495 /* CHANGELOG.txt in Resources */,
+				CB0A6A1E19D170FA007F6495 /* flashlight-turn-off-icon.png in Resources */,
+				CB0A6A1719D170FA007F6495 /* camera-swap-icon.png in Resources */,
+				CB0A6A1C19D170FA007F6495 /* flashlight-turn-off-icon-pressed.png in Resources */,
+				CB0A6A2319D170FA007F6495 /* flashlight-turn-on-icon@2x.png in Resources */,
 				CB5AF04819B0613500CCB912 /* Main.storyboard in Resources */,
-				CB5AF07E19B0695400CCB912 /* scanditsdk.strings in Resources */,
-				CB5AF08619B0695400CCB912 /* flashlight-turn-on-icon.png in Resources */,
-				CB5AF07A19B0695400CCB912 /* camera-swap-icon-pressed@2x.png in Resources */,
-				CB5AF08519B0695400CCB912 /* flashlight-turn-on-icon-pressed@2x.png in Resources */,
-				CB5AF08019B0695400CCB912 /* flashlight-turn-off-icon-pressed.png in Resources */,
+				CB0A6A2719D170FA007F6495 /* poweredby@2x.png in Resources */,
 				CB5AF04A19B0613500CCB912 /* Images.xcassets in Resources */,
-				CB5AF08119B0695400CCB912 /* flashlight-turn-off-icon-pressed@2x.png in Resources */,
+				CB0A6A1F19D170FA007F6495 /* flashlight-turn-off-icon@2x.png in Resources */,
+				CB0A6A1519D170FA007F6495 /* camera-swap-icon-pressed.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,12 +404,11 @@
 				CB59768619B48FE90075EA8C /* Net.swift in Sources */,
 				CB59768A19B48FE90075EA8C /* NetRequestSerialization.swift in Sources */,
 				CB59768919B48FE90075EA8C /* NetHelper.swift in Sources */,
+				CB0A6A1B19D170FA007F6495 /* empty.cpp in Sources */,
 				CB59768819B48FE90075EA8C /* NetDownloadTask.swift in Sources */,
-				CB6DD91519B46DB200FB37DE /* QrScannerViewController.swift in Sources */,
 				CB5AF04519B0613500CCB912 /* MainViewController.swift in Sources */,
 				CB59768719B48FE90075EA8C /* NetData.swift in Sources */,
 				CB5AF04319B0613500CCB912 /* AppDelegate.swift in Sources */,
-				CB5AF07F19B0695400CCB912 /* empty.cpp in Sources */,
 				CB59768B19B48FE90075EA8C /* NetResponseData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,21 +432,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CB0A6A0219D170FA007F6495 /* scanditsdk.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB0A6A0319D170FA007F6495 /* de */,
+				CB0A6A0519D170FA007F6495 /* en */,
+			);
+			name = scanditsdk.strings;
+			sourceTree = "<group>";
+		};
 		CB5AF04619B0613500CCB912 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CB5AF04719B0613500CCB912 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CB5AF06619B0695400CCB912 /* scanditsdk.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CB5AF06719B0695400CCB912 /* de */,
-				CB5AF06919B0695400CCB912 /* en */,
-			);
-			name = scanditsdk.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -542,6 +542,7 @@
 					"$(PROJECT_DIR)/helpDesk/ScanditSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/WooD1k/swift/helpDesk/helpDesk/helpDesk-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -558,6 +559,7 @@
 					"$(PROJECT_DIR)/helpDesk/ScanditSDK",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/WooD1k/swift/helpDesk/helpDesk/helpDesk-Bridging-Header.h";
 			};
 			name = Release;
 		};

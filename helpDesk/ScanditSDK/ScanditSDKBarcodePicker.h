@@ -58,9 +58,30 @@ typedef enum {
 	CHECKSUM_MOD_1110
 } MsiPlesseyChecksumType;
 
+/**
+ * Enumerates the possible working ranges for the barcode picker
+ *
+ * @since 4.1.0
+ */
 typedef enum {
+	/**
+	 * The camera tries to focus on barcodes which are close to the camera. To scan far-
+	 * away codes (30-40cm+), user must tap the screen. This is the default working range 
+	 * and works best for most use-cases. Only change the default value if you expect the 
+	 * users to often scan codes which are far away.
+	 */
     STANDARD_RANGE,
+	/**
+	 * The camera tries to focus on barcodes which are far from the camera. This will make
+	 * it easier to scan codes that are far away but degrade performance for very close 
+	 * codes.
+	 */
     LONG_RANGE,
+	
+	/**
+	 * @deprecated This value has been deprecated in Scandit SDK 4.2+. Setting it 
+	 * has no effect
+	 */
     HIGH_DENSITY
 } WorkingRange;
 
@@ -150,9 +171,15 @@ typedef enum {
 @property (readonly, nonatomic, assign) CameraFacingDirection cameraFacingDirection;
 
 /**
- * @brief The range at which the barcode is normally placed.
+ * @brief Sets the focus working range for the barcode picker
  *
- * By default this is standard range.
+ * The working range tells the engine at which distance barcodes are to be expected. When set to
+ * STANDARD_RANGE (the default), the focus is optimized for barcodes close to the camera.
+ * When set to LONG_RANGE, the focus is optimized for far-away codes.
+ *
+ * See ::WorkingRange for a list of possible values
+ *
+ * The working range hint is ignored on cameras with fixed-focus.
  *
  * @since 4.1.0
  */
