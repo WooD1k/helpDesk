@@ -9,30 +9,28 @@
 import UIKit
 import MobileCoreServices
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, ScanditSDKOverlayControllerDelegate  {
+class ViewController: UIViewController, UINavigationControllerDelegate {
 	@IBOutlet var scrollView: UIScrollView!
-	var activeField: UITextField?
-	var imagePickerController: UIImagePickerController!
-	let alert = UIAlertView()
-	var scanPicker = ScanditSDKBarcodePicker(appKey: "mHbeTgp5EeSKsmLJfKEh7Cg56poI/nKQw2Hb8HRrI/U", cameraFacingPreference: CAMERA_FACING_BACK)
-	var scanditOverlayController = ScanditSDKOverlayController()
-	
 	@IBOutlet weak var userPhoto: UIImageView!
-	
 	@IBOutlet weak var locationTextField: UITextField!
 	@IBOutlet weak var descriptionTextField: UITextField!
 	
+	let alert = UIAlertView()
+	
+	var activeField: UITextField?
+	var imagePickerController: UIImagePickerController!
+	
+	var scanPicker = ScanditSDKBarcodePicker(appKey: "mHbeTgp5EeSKsmLJfKEh7Cg56poI/nKQw2Hb8HRrI/U", cameraFacingPreference: CAMERA_FACING_BACK)
+	var scanditOverlayController = ScanditSDKOverlayController()
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		scanditOverlayController.setBeepEnabled(false)
 		registerForKeyboardNotification()
-		// Do any additional setup after loading the view, typically from a nib.
 	}
 	
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
 	}
 	
 	@IBAction func textFieldDidBeginEditing(sender: UITextField) {
@@ -51,7 +49,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 	}
 	
 	@IBAction func doSendData(sender: UIButton) {
-		
 		alert.title = "something went wrong"
 		alert.addButtonWithTitle("Ok")
 		
@@ -79,9 +76,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 	@IBAction func takeAccidentPhoto(sender: UIButton) {
 		if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
 			imagePickerController = UIImagePickerController()
-			imagePickerController.delegate = self
 			imagePickerController.sourceType = UIImagePickerControllerSourceType.Camera
 			imagePickerController.allowsEditing = true
+			imagePickerController.delegate = self
 			
 			self.presentViewController(imagePickerController, animated: true, completion: nil)
 		}
@@ -123,23 +120,29 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 		scrollView.scrollIndicatorInsets = contentInsets;
 	}
 	
-	func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
-		userPhoto.image = image
-		imagePickerController.dismissViewControllerAnimated(true, completion: nil)
-	}
-	
 	func successfulRequest(ResponseData) {
 		var response = ResponseData.self
+		
 		alert.message = "successfulRequest: \(response)"
 		alert.show()
 	}
 	
 	func failureRequest(NSError!) {
 		var error = NSError.self
+		
 		alert.message = "failureRequest: \(error)"
 		alert.show()
 	}
-	
+}
+
+extension ViewController: UIImagePickerControllerDelegate {
+	func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
+		userPhoto.image = image
+		imagePickerController.dismissViewControllerAnimated(true, completion: nil)
+	}
+}
+
+extension ViewController: ScanditSDKOverlayControllerDelegate {
 	func scanditSDKOverlayController(overlayController: ScanditSDKOverlayController!, didCancelWithStatus status: [NSObject : AnyObject]!) {
 		dismissViewControllerAnimated(true, completion: {
 			self.scanPicker.stopScanning()
@@ -152,7 +155,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 	
 	func scanditSDKOverlayController(overlayController: ScanditSDKOverlayController!, didScanBarcode barcode: [NSObject : AnyObject]!) {
 		if let scanResult = barcode as? Dictionary<String, AnyObject> {
-			println("scanResult: \(scanResult)")
 			dismissViewControllerAnimated(true, completion: {
 				self.scanPicker.stopScanning()
 				self.locationTextField.text = barcode.description
@@ -160,4 +162,3 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 		}
 	}
 }
-
