@@ -14,6 +14,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
 	@IBOutlet weak var userPhoto: UIImageView!
 	@IBOutlet weak var locationTextField: UITextField!
 	@IBOutlet weak var descriptionTextField: UITextField!
+	@IBOutlet weak var photoPlaceHolderLabel: UILabel!
 	
 	let alert = UIAlertView()
 	
@@ -138,6 +139,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
 extension ViewController: UIImagePickerControllerDelegate {
 	func imagePickerController(picker: UIImagePickerController!, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
 		userPhoto.image = image
+		photoPlaceHolderLabel.text = ""
 		imagePickerController.dismissViewControllerAnimated(true, completion: nil)
 	}
 }

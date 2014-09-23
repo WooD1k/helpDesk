@@ -160,6 +160,7 @@
                     <connections>
                         <outlet property="descriptionTextField" destination="xnn-bV-wdN" id="pKN-DB-im3"/>
                         <outlet property="locationTextField" destination="LnB-fM-67G" id="aPG-i9-gAa"/>
+                        <outlet property="photoPlaceHolderLabel" destination="2BP-ob-E2d" id="8tb-GD-Bac"/>
                         <outlet property="scrollView" destination="kh9-bI-dsS" id="bW3-gF-c6z"/>
                         <outlet property="userPhoto" destination="5aY-yp-DCw" id="r2o-sm-N2N"/>
                     </connections>
